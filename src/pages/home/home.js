@@ -1,12 +1,10 @@
 import React from 'react'
-import Card from '../../components/card/Card'
+import MovieList from '../../components/movie-list/MovieList'
 import './home.css'
 const home = () => {
   return (
     <div className='card-array'>
-      {
-        [...Array(14)].map((e, i) => <Card key={i} />)
-      }
+      <MovieList />
     </div>
   )
 }
